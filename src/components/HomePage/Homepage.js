@@ -6,7 +6,7 @@ import './Homepage.scss';
 const Homepage = () => {
     Aos.init({duration: 1500});
     return (
-        <section className='homepage_section' id='home'>
+        <section className='homepage_section' id='Home'>
             <video
                 autoPlay
                 loop
