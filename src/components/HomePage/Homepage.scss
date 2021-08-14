@@ -1,0 +1,158 @@
+//MOBILE
+.homepage_section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+};
+.homepage_bg_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 9;
+};
+.homepage_title,
+.homepage_subtitle {
+    position: absolute;
+    z-index: 11;
+    top: 200px;
+    left: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+};
+.homepage_subtitle {
+    top: 340px;
+    font-size: 28px;
+    width: 150px;
+};
+.homepage_subtitle::after{
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    content: "";
+    background-color: #f1f1f1;
+    bottom: -10px;
+    left: 0;
+    z-index: 11;
+};
+.homepage_black_square {
+    position: absolute;
+    bottom: -300px;
+    left: 150px;
+    height: 2000px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.85);
+    transform: rotate(25deg);
+    z-index: 10;
+    overflow: hidden;
+};
+.scroll_icon {
+    color: #010101;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    width: 20px;
+    color: #f1f1f1;
+    z-index: 11;
+    font-family: 'Roboto Mono', monospace;
+};
+.scroll_icon::before {
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    content: "";
+    background-color: #f1f1f1;
+    top: 0;
+    left: -5px;
+};
+.mouse_object {
+    position: absolute;
+    z-index: 11;
+    width: 20px;
+    height: 40px;
+    content: "";
+    border: 1.5px solid #f1f1f1;
+    border-radius: 18px;
+    bottom: 45px;
+    right: 10px;
+    animation: mouse_move 4s infinite;
+}
+.mouse_object::after {
+    position: absolute;
+    width: 2px;
+    height: 5px;
+    content: "";
+    background-color: #f1f1f1;
+    top: 10px;
+    left: 50%;
+}
+//TABLET
+@media (min-width: 768px) {
+    .homepage_title{
+        font-size: 50px;
+    }
+    .homepage_subtitle {
+        font-size: 32px;
+        width: 300px;
+        top: 400px;
+    }
+    .homepage_black_square {
+        width: 400px;
+    };
+}
+//LAPTOP
+@media (min-width: 1440px) {
+    .homepage_title{
+        left: 120px;
+        font-size: 60px;
+    }
+    .homepage_subtitle {
+        left: 120px;
+        font-size: 36px;
+        width: 400px;
+        top: 400px;
+    }
+    .homepage_black_square {
+        width: 600px;
+    };
+    .homepage_subtitle::after {
+        width: 180px;
+    }
+    .scroll_icon {
+        right: 160px;
+        font-size: 22px;
+    }
+    .scroll_icon::before {
+        height: 65px;
+    }
+    .mouse_object {
+        width: 26px;
+        height: 50px;
+    }
+}
+//DESKTOP
+@media (min-width: 1920px) { 
+    .homepage_title{
+        font-size: 64px;
+        left: 200px;
+    }
+    .homepage_subtitle {
+        font-size: 38px;
+        left: 200px;
+    }
+}
+//ANIMATIONS
+@keyframes mouse_move {
+    0% {
+        bottom: 45px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100% {
+        bottom: 45px;
+    }
+}
