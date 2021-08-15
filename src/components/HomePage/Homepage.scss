@@ -102,6 +102,9 @@
     .homepage_black_square {
         width: 400px;
     };
+    .mouse_object {
+        right: 15px;
+    }
 }
 //LAPTOP
 @media (min-width: 1440px) {
@@ -131,6 +134,7 @@
     .mouse_object {
         width: 26px;
         height: 50px;
+        right: 20px;
     }
 }
 //DESKTOP

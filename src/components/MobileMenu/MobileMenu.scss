@@ -1,0 +1,95 @@
+.menu_button {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+    background-color: transparent;  
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.times {
+    opacity: 1;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 50px;
+    right: 50px;
+    z-index: 10000;
+    background-color: transparent;  
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.times.active {
+    opacity: 0;
+}
+.line {
+    background-color: azure;
+    width: 90%;
+    height: 2.5px;
+    border-radius: 25%;
+    transition: 0.3s ease-in;
+    z-index: 9999;
+}
+
+.menu_button.active {
+    cursor: auto;
+    .line_one {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    .line_two {
+        opacity: 0;
+    }
+    .line_three {
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+}
+.menu-content.disactive {
+    display: none;
+}
+.menu-content.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: black;
+    transition: 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+
+}
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 200px;
+
+    a {
+        color: #f1f1f1;
+        text-decoration: none;
+        padding: 25px 10px;
+        font-size: 32px;
+        font-family: 'Roboto Mono', monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+    }
+}
+@media (min-width:1024px) {
+    .menu_button {
+        display: none;
+    }
+}

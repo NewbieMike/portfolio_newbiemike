@@ -4,7 +4,7 @@ body {
     padding: 0;   
     //font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 };
 h1,
 h2,
@@ -17,3 +17,23 @@ h6 {
     font-family: 'Roboto Mono', monospace;
     //font-family: 'Roboto Slab', serif;
 };
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(38,81,99);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(38,81,99);
+  }
