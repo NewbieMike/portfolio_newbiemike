@@ -1,6 +1,7 @@
 import React from "react";
 import './App.scss';
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Homepage from "./components/HomePage/Homepage";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
@@ -14,6 +15,7 @@ const App = () =>  {
       <Homepage id='Home'/>
       <Portfolio id='Portfolio' />
       <About id='About'/>
+      <Contact id='Contact'/>
     </div>
   );
 }

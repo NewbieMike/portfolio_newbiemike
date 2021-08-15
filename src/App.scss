@@ -17,7 +17,15 @@ h6 {
     font-family: 'Roboto Mono', monospace;
     //font-family: 'Roboto Slab', serif;
 };
-
+h1 {
+  margin-left: 25px;
+  font-size: 34px;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+  }
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

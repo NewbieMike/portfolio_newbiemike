@@ -38,6 +38,26 @@
     left: 0;
     z-index: 11;
 };
+.btn_to_portfolio {
+    position: absolute;
+    z-index: 101;
+    color: #f1f1f1;
+    font-size: 20px;
+    top: 530px;
+    left: 120px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    transition: 0.4s ease-in-out;
+}
+.btn_to_portfolio:hover {
+    background-color: #f1f1f1;
+    color: #010101;
+}
 .homepage_black_square {
     position: absolute;
     bottom: -300px;

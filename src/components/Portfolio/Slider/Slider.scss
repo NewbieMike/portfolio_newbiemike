@@ -132,7 +132,7 @@ ul {
 }
 .show_more_arrow {
   position: absolute;
-  bottom: -100px;
+  bottom: -120px;
   left: 50%;
   transform: translate(-50%);
   /* color: rgba(102, 7, 7, 0.699); */
@@ -149,12 +149,12 @@ ul {
 .show_more_arrow::after {
   content: '';
   position: absolute;
-  top: 65px;
+  top: 20px;
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: rgb(38,81,99);
-  height: 90px;
-  width: 3px;
+  height: 1px;
+  width: 150px;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.15);
 }
 .show_more_arrow:hover {
