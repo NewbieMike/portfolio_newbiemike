@@ -2,13 +2,13 @@ import React from 'react';
 import './Header.scss';
 import {Link as ScrollLink} from 'react-scroll';
 
-const Header =() => {
+import logo from '../../media/logo.png'
+const Header = () => {
     return (
         <header className='main_header'>
             <div className='header_logo'>
-                <ScrollLink to="Home">
-                    Just Mike
-                    {/* <img src={logo} alt='logo'/> */}
+                <ScrollLink to="Home" smooth={true}>
+                    JustMike<img src={logo} alt='logo'/>
                 </ScrollLink>
             </div>
             <div className='header_links'>
